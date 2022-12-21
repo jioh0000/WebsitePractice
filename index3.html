@@ -13,47 +13,13 @@
 	</head>
 
 	<body>
-		<ul>
-			<li> Forwards </li>
-			<li> Defense </li>
-			<li> Goalkeeper </li>
-		</ul>
+		<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Date and Time Displayer </button>
+		
+		<h1 id = "demo"></h1>
 
-		<ol>
-			<li> Forwards </li>
-			<li> Defense </li>
-			<li> Goalkeeper </li>
-		</ol>
-
-		<dl>
-			<dt> Forwards </dt>
-			<dt>- Scoring goals </dt>
-			<dt> Defence </dt>
-			<dt>- prevent goals </dt>
-		</dl>
-
-		<table>
-			<tr>
-				<th> Forward </th>
-				<th> Defense </th>
-				<th> Golie </th>
-			</tr>
-			<tr>
-				<td> Son </th>
-				<td> Kim </th>
-				<td> Lee </th>
-			</tr>
-			<tr>
-				<td> Choi </th>
-				<td> Park </th>
-				<td> Kim </th>
-			</tr>
-		</table>
-
-		<a href="https://en.wikipedia.org/wiki/South_Korea_national_football_team"> Wikipedia </a>
-
-		<h4 style="border: 3px solid blue"> This is a website  about the Korean Soccer Team </h4>
-		<iframe src="https://en.wikipedia.org/wiki/South_Korea_national_football_team" style="border: 3px solid blue;" height="1000" width="600"> </iframe>
+		<img id="lightImage" src="off.png" style="width:300px">
+		<button onclick = "document.getElementById('lightImage').src='on.png'"> Turn on </button>
+		<button onclick = "document.getElementById('lightImage').src='off.png'"> Turn off </button>		
 
 	</body>
 </html>
