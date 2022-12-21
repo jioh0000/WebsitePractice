@@ -1,0 +1,36 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif; /* html에서 저장만 한 font 적용, body에 할 경우 전체에 적용 */
+}
+h1{
+	color: blue;
+}
+p{
+	color: #44DD66;
+	background-color: red;
+	font-size: 50px;
+}
+p:hover{ /* hover --> if 마우스 is on p */
+	color:orange;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: blue;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+.text-red{
+	color: red;
+}
+.text-center{
+	text-align: center;
+}
+.text-purple{ /* .(dot) is for class */
+	color:purple;
+}
+#heading{ /* #(hashtag) is for id */
+}
