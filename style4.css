@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+}
+ul{
+	list-style-type: none;
+}
+
+li{
+	float: left; 
+}
+li a{
+/* Displaying the links as block element so we can specity the width */
+	display: block;
+	width: 100px;
+	text-decoration: none;
+	background-color: gray;
+	color: white;
+	padding: 8px 10px;
+}
+li a:hover{
+	background-color: green;
+}
+.active{
+	background-color: green;
+}
+.navbar{
+	background-color: gray;
+	overflow: hidden;
+}
+.navbar a{
+	float: left;
+	padding: 8px 30px;
+	text-decoration: none;
+	color: black;
+	color: black;
+}
+.navbar a:hover{
+	background-color: green;
+	color: white;
+}
