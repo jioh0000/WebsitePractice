@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="dynamicAdd()">
+            Click Me!
+        </button>
+        <div id="answer"></div>
+        <div style="font-size: 30px; font-weight: bold; margin-top: 20px;">
+            Temperature Converter (Fahrenheit to Celsius)
+        </div>
+        <div>
+            Fahrenheit
+        </div>
+        <input value = 0 id="fahrInput" />
+        <button onclick="convertToCelsius()">
+            Convert!
+        </button>
+        <div>
+            Celsius
+        </div>
+        <div id="celsius"></div>
+    <script>
+        // Creating Variables
+        x = 5
+        y = "Hello World"
+        let newVariable = 10
+        var newVariable2 = 20
+        const fixedVariable = 30
+        
+        // Logging to the console. Console can be found in the inspect panel in Chrome
+        console.log(x)
+
+        // Arithmetic
+        console.log(10 + 5)
+        console.log(10 * 5)
+        console.log("Hello" + 10)
+
+        // If Statements
+        x = 10
+        if(x==5){
+            console.log("X is 5")
+        }
+        else if(x == 10){
+            console.log("X is 10")
+        }
+        console.log(x == 10)
+        console.log(x === 10) // Same value and same type
+        console.log(x !== 10) // Not eqal value or not equal type
+
+
+        // Functions
+        function add(a, b){
+            return a + b
+        }
+        
+        function dynamicAdd(){
+            a = parseInt(prompt("Number 1"));
+            b = parseInt(prompt("Number 2"));
+            document.getElementById("answer").innerHTML = "The answer is: " + (a + b);
+        }
+
+        function convertToCelsius(){
+            fahr = parseFloat(document.getElementById("fahrInput").value)
+            celsius = (5/9) * (fahr-32)
+            document.getElementById("celsius").innerHTML = celsius
+        }
+
+        // While loops
+        i = 0
+        while(i < 5){
+            console.log(i++)
+        }
+
+        // For loops
+        for(i=0; i<5; i++){
+            console.log(i)
+        }
+
+        // Arrays
+        sports = ["soccer", "badminton", "baseball"]
+        console.log(sports[0])
+        sports[0] = "football"
+        console.log(sports)
+        console.log(sports.length)
+        console.log(sports.sort()) // sorting
+        console.log(sports[sports.length-1]) // last elemnet
+        sports.push("tennis") // Adds this element to the end
+        sports.pop() // Remove the last element
+
+        fruits = ['apple', 'banana', 'orange']
+        var index = fruits.indexOf('banana')
+        console.log('Index of Banana: ', index)
+        if(index > -1){
+            fruits.splice(index, 1) // First parameter is the starting index, second is the length
+        }
+        console.log(fruits)
+
+        cars = ['bmw', 'ford', 'hyundai', 'kia', 'ferrrari']
+
+        cars.map((i) => {
+            console.log('inline function: ', i)
+        })
+        cars.map(function(i){
+            console.log('normal function: ', i)
+        })
+
+        function printer(i){
+            console.log(i)
+        }
+
+        cars.map(printer)
+
+        number = [1,2,3,45,6,7,8,66]
+        filteredNumber = number.filter((i) => { return i < 6 }) // Filtering the array
+        console.log(filteredNumber)
+        
+    </script>
+    </body>
+</html>
